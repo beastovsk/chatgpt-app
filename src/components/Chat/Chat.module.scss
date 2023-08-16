@@ -6,6 +6,9 @@
 	height: 100vh;
 }
 .content {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
 	border-radius: 16px;
 	border: 1px solid #fff;
 	background: #fff;
@@ -13,7 +16,7 @@
 	/* Shadow */
 	box-shadow: 0px 2px 31px 13px rgba(10, 63, 142, 0.08);
 
-	width: 40vw;
+	width: 60vw;
 	height: 50vh;
 	padding: 40px 20px;
 }
@@ -21,20 +24,33 @@
 	margin-top: 1rem;
 }
 .submit {
+	cursor: pointer;
 	background: inherit;
 	border: none;
 	padding: 0;
 	margin: 0;
+	transition: 0.3s;
+
+	&:hover {
+		opacity: 0.7;
+	}
+	&:active {
+		opacity: 0.8;
+	}
 }
 .input {
 	border-radius: 15px;
 	padding: 10px 20px;
+	font-size: 16px;
 }
 .item {
 	display: flex;
+	gap: 10px;
 }
 .message {
 	display: flex;
+	align-items: flex-start;
+	text-align: start;
 	color: #111;
 	border-radius: 28px;
 	background: rgba(34, 118, 245, 0.2);
@@ -43,4 +59,17 @@
 	font-style: normal;
 	font-weight: 400;
 	width: max-content;
+
+	word-break: break-all;
+	max-width: 70%;
+}
+.local {
+	flex-direction: row-reverse;
+}
+.sended {
+	background: #007afe;
+	color: #fff;
+}
+.image {
+	height: max-content;
 }
