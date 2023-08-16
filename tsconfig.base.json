@@ -1,0 +1,11 @@
+{
+	"compileOnSave": false,
+	"compilerOptions": {
+		"paths": {
+			"@awesomereactapp/domains/orders/checkout": [
+				"domains/orders/checkout/src/index.ts"
+			]
+		}
+	},
+	"exclude": ["node_modules", "tmp"]
+}
